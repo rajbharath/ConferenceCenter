@@ -31,14 +31,13 @@ Note:
 Usecase:
  
 1. Conference Center Owner gets the input as Conference and returns the plan
-
-2. Conference Center owner checks the conference dates whether it is operational on those dates or not  
-3. If it is operational on those dates then the conference center owner finds the list of available Conference Rooms for the event
+2. Conference Center owner checks the conference dates whether Conference Center is operational on those dates or not  
+3. If it is operational on those dates then the conference center owner finds the list of available Conference Rooms for an event
 4. Availability of ConferenceRoom is determined by
-                i) no of attendees of that event is <= the conference room capacity
-                ii) Date of event should not fall in time of room maintenance date 
+                  i) no of attendees of that event is <= the conference room capacity
+                 ii) Date of event should not fall in time of room maintenance date 
                 iii) Conference Room should not have a booking on that event date and time. Conference Room checks with its Booking History for this condition.
-5. Repeat step 7 to 9 till for all the events in the Conference
+5. Repeat step 3 till for all the events in the Conference
 6. Return the Plan
 7. Plan contains the following
 				- Conference Name
