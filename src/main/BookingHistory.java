@@ -14,6 +14,7 @@ public class BookingHistory {
 	}
 
 	public boolean isAnyOverLappingEventFor(Event inputEvent) {
+	//TO DO find whether booked events has any event in the time of inputevent
 		return false;
 	}
 }
