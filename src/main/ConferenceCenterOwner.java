@@ -30,25 +30,14 @@ public class ConferenceCenterOwner {
 		return nonOperationalDates.remove(date);
 	}
 
-	public boolean isOperatingOn(Date date) {
 
-		return !nonOperationalDates.contains(date);
-	}
-
-	public boolean isOperating(Date startDate, Date endDate) {
-		Calendar calendar = Calendar.getInstance();
-		calendar.setTime(startDate);
-		do {
-			if (nonOperationalDates.contains(calendar.getTime())) {
-				return false;
-			}
-			calendar.add(Calendar.DATE, 1);
-		} while (!calendar.getTime().equals(endDate));
+	private boolean isOperationalBetween(Date startDate, Date endDate) {
+		//TO DO logic for finding operational between start date and end date
 		return true;
 	}
 
 	public Plan getPlan(Conference conference) {
-
+		//TO DO finds the available rooms for each event in the conference
 		return null;
 	}
 
