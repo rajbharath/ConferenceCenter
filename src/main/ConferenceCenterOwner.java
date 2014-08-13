@@ -37,12 +37,12 @@ public class ConferenceCenterOwner {
 	}
 
 	public Plan getPlan(Conference conference) {
-		//TO DO finds the available rooms for each event in the conference
+		//TO DO iterate through the events in the conference for getting available rooms
 		return null;
 	}
 
-	private List<Event> getAvailableRooms() {
-
+	private List<ConferenceRoom> getAvailableRooms(Event event) {
+		//TO DO finds the available rooms for each event in the conference
 		return null;
 	}
 
