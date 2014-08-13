@@ -8,7 +8,6 @@ public class Event {
 
 	public Event(String eventName, String startTime, String endTime,
 			int noOfAttendees) {
-		super();
 		this.eventName = eventName;
 		this.startTime = startTime;
 		this.endTime = endTime;
